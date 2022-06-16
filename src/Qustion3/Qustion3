@@ -1,0 +1,27 @@
+Qustion 3 --- Why is multiple inheritance not supported in Java at class level
+
+Ans ---
+
+Multiple Inheritance is a feature of an object-oriented concept,
+ where a class can inherit properties of more than one parent class.
+  The problem occurs when there exist methods with the same signature in both the superclasses and subclass.
+  On calling the method,
+ the compiler cannot determine which class method to be called and even on calling which class method gets the priority.
+
+ Ex--
+          GrandParent
+           /     \
+          /       \
+      Parent1      Parent2
+          \       /
+           \     /
+             Test
+
+             It is just to remove the ambiguity ,
+              because multiple inheritance can cause ambiguity around Diamond problem in few scenarios.
+              For example, if you have two parent classes, they might have different implementations of the same feature
+              — or possibly two different features with the same name.
+               Then you have to deal with deciding which one your subclass is going to use.
+               There are ways of handling this, but the designers of Java felt that multiple inheritance causes more problems and confusion than it solves.
+                So they avoid multiple inheritance from the Java language.
+
